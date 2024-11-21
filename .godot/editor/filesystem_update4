@@ -1,1 +1,4 @@
 res://scenes/views/main.tscn
+res://scenes/views/multi_tool.gd
+res://compontets/tools/road/Road.gd
+res://compontets/tools/road/Tool.gd
