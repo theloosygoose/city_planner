@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://b8a4wx8rjlp5n"]
+[gd_scene load_steps=2 format=3 uid="uid://b8a4wx8rjlp5n"]
+
+[ext_resource type="Script" path="res://components/tools/MultiTool.gd" id="1_lh1jr"]
 
 [node name="Mapper" type="Node"]
 
@@ -8,4 +10,9 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 color = Color(0.0470588, 0.0588235, 0.0392157, 1)
+
+[node name="MultiTool" type="Node" parent="."]
+script = ExtResource("1_lh1jr")
