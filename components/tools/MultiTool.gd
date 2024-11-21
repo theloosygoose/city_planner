@@ -14,6 +14,7 @@ func _input(event: InputEvent) -> void:
                 @warning_ignore("unsafe_property_access")
                 print("Mouse left pressed at: ", event.position)
 
-@warning_ignore("unused_parameter")
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
     pass
+
+
