@@ -1,2 +1,3 @@
 res://components/tools/road/Tool.gd
 res://components/tools/MultiTool.gd
+res://scenes/views/main.tscn
