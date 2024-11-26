@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dex7v3k3top52"]
+
+[ext_resource type="Texture2D" uid="uid://dpl5gllhhru5f" path="res://icon.svg" id="1_skyif"]
+
+[node name="RoadNode" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_skyif")
+
+[node name="Center" type="Marker2D" parent="."]
+gizmo_extents = 29.4

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8a4wx8rjlp5n"]
+[gd_scene load_steps=3 format=3 uid="uid://b8a4wx8rjlp5n"]
 
 [ext_resource type="Script" path="res://components/tools/MultiTool.gd" id="1_lh1jr"]
+[ext_resource type="PackedScene" uid="uid://dex7v3k3top52" path="res://scenes/nodes/road_node.tscn" id="2_0i4ce"]
 
 [node name="Mapper" type="Node"]
 
@@ -16,3 +17,4 @@ color = Color(0.0470588, 0.0588235, 0.0392157, 1)
 
 [node name="MultiTool" type="Node" parent="."]
 script = ExtResource("1_lh1jr")
+roadnode_scene = ExtResource("2_0i4ce")
