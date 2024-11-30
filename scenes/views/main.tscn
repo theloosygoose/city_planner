@@ -1,9 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8a4wx8rjlp5n"]
+[gd_scene load_steps=6 format=3 uid="uid://b8a4wx8rjlp5n"]
 
+[ext_resource type="Script" path="res://components/mapper.gd" id="1_k8wwf"]
 [ext_resource type="Script" path="res://components/tools/MultiTool.gd" id="1_lh1jr"]
 [ext_resource type="PackedScene" uid="uid://dex7v3k3top52" path="res://scenes/nodes/road_node.tscn" id="2_0i4ce"]
+[ext_resource type="Script" path="res://resources/res_SaveData.gd" id="4_acixg"]
+
+[sub_resource type="Resource" id="Resource_e4yes"]
+script = ExtResource("4_acixg")
+save_name = "Test_1"
+save_id = "01"
 
 [node name="Mapper" type="Node"]
+script = ExtResource("1_k8wwf")
 
 [node name="Background" type="ColorRect" parent="."]
 anchors_preset = 15
@@ -18,3 +26,4 @@ color = Color(0.0470588, 0.0588235, 0.0392157, 1)
 [node name="MultiTool" type="Node" parent="."]
 script = ExtResource("1_lh1jr")
 roadnode_scene = ExtResource("2_0i4ce")
+CityData = SubResource("Resource_e4yes")

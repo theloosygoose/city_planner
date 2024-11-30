@@ -16,5 +16,4 @@ func _ready() -> void:
     pass
 
 func _enter_tree() -> void:
-    #make the name and data here
     pass

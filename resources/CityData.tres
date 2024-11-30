@@ -1,7 +1,3 @@
-extends Resource
-class_name CityData 
+[gd_resource type="Resource" format=3 uid="uid://brooc857nmc5e"]
 
-
-var name: String
-var road_nodes: Array
-var date_created: String
+[resource]
