@@ -1,9 +1,8 @@
 extends Node
 class_name MultiTool
 
-
-
 @export var roadnode_scene: PackedScene
+@export var CityData: Resource
 
 var click_position: Vector2
 
@@ -24,6 +23,8 @@ func _input(event: InputEvent) -> void:
 
                 @warning_ignore("unsafe_property_access", "unsafe_call_argument")
                 place_scene(roadnode_scene, event.position)
+
+
 
 func _process(_delta: float) -> void:
     pass

@@ -1,0 +1,7 @@
+extends Resource
+class_name CityData 
+
+
+var name: String
+var road_nodes: Array
+var date_created: String
