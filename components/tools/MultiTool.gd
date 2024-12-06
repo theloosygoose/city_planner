@@ -8,7 +8,6 @@ var click_position: Vector2
 
 func _init() -> void:
     pass
-    
 
 
 func _input(event: InputEvent) -> void:

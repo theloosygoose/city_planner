@@ -1,7 +1,6 @@
 extends Node
 class_name EntityManager
 
-
 func Add() -> void:
     pass
 
