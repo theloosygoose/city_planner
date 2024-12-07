@@ -11,7 +11,6 @@ var location: Vector2
 func _init() -> void:
     pass
 
-
 func _ready() -> void:
     pass
 
