@@ -40,12 +40,16 @@ roadnode_scene = ExtResource("2_0i4ce")
 CityData = SubResource("Resource_e4yes")
 
 [node name="Label" type="Label" parent="."]
-offset_left = 69.0
-offset_top = 47.0
-offset_right = 133.0
-offset_bottom = 78.0
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -53.0
+offset_right = 118.0
+grow_vertical = 0
 scale = Vector2(1, 1.01161)
 theme = ExtResource("5_htmnq")
 text = "Mode"
 label_settings = SubResource("LabelSettings_hfq0u")
+horizontal_alignment = 1
+vertical_alignment = 1
 script = ExtResource("6_r6rvp")

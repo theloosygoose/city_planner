@@ -1,11 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://dex7v3k3top52"]
+[gd_scene load_steps=3 format=3 uid="uid://dex7v3k3top52"]
 
-[ext_resource type="Texture2D" uid="uid://dpl5gllhhru5f" path="res://icon.svg" id="1_skyif"]
+[ext_resource type="Texture2D" uid="uid://1bkjtbwxsqep" path="res://assets/sprites/nodes/node@4.png" id="1_2j8qv"]
+[ext_resource type="Texture2D" uid="uid://tss03plnxj2x" path="res://assets/sprites/nodes/node-highlight@4.png" id="2_fi3mb"]
 
 [node name="RoadNode" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_skyif")
-
 [node name="Center" type="Marker2D" parent="."]
 gizmo_extents = 29.4
+
+[node name="node" type="Sprite2D" parent="."]
+scale = Vector2(-0.291096, -0.291096)
+texture = ExtResource("1_2j8qv")
+
+[node name="highlight" type="Sprite2D" parent="."]
+scale = Vector2(0.308495, 0.308495)
+texture = ExtResource("2_fi3mb")
