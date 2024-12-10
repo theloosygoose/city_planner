@@ -1,4 +1,4 @@
-extends Node
+extends Node2D
 class_name MultiTool
 
 @export var roadnode_scene: PackedScene
@@ -7,33 +7,30 @@ class_name MultiTool
 var click_position: Vector2
 
 func _init() -> void:
-    pass
+	pass
 
 
 func _input(event: InputEvent) -> void:
-    if event is InputEventMouseButton and event.is_pressed():
+	if event is InputEventMouseButton and event.is_pressed():
 
-        @warning_ignore("unsafe_property_access")
-        match event.button_index:
+		@warning_ignore("unsafe_property_access")
+		match event.button_index:
 
-            MOUSE_BUTTON_LEFT:
-                @warning_ignore("unsafe_property_access")
-                print("Mouse left pressed at: ", event.position)
+			MOUSE_BUTTON_LEFT:
+				print("Mouse left pressed at: ", get_global_mouse_position())
 
-                @warning_ignore("unsafe_property_access", "unsafe_call_argument")
-                place_scene(roadnode_scene, event.position)
+				place_scene(roadnode_scene, get_global_mouse_position())
 
 
 
 func _process(_delta: float) -> void:
-    pass
+	pass
 
 
-func place_scene(scene: PackedScene, position: Vector2) -> void:
+func place_scene(scene: PackedScene, c_position: Vector2) -> void:
 
-    var road_node: Node2D = scene.instantiate()
+	var road_node: Node2D = scene.instantiate()
 
-    road_node.position = position
+	road_node.position = c_position
 
-    add_child(road_node)
-
+	add_child(road_node)
