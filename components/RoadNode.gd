@@ -4,7 +4,6 @@ class_name RoadNode
 
 var connections: Array
 
-
 var id: int
 var location: Vector2
 

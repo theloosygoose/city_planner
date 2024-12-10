@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://components/tools/MultiTool.gd" id="1_lh1jr"]
 [ext_resource type="PackedScene" uid="uid://dex7v3k3top52" path="res://scenes/nodes/road_node.tscn" id="2_0i4ce"]
 [ext_resource type="Script" path="res://resources/res_SaveData.gd" id="4_acixg"]
-[ext_resource type="FontFile" uid="uid://ckf4fe47xlov7" path="res://assets/fonts/Roboto/Roboto-Black.ttf" id="5_yfu5a"]
+[ext_resource type="Theme" uid="uid://bwlk027ro6wee" path="res://assets/themes/main_ui/main_theme.tres" id="5_htmnq"]
 [ext_resource type="Script" path="res://components/ui/mode_label.gd" id="6_r6rvp"]
 
 [sub_resource type="Resource" id="Resource_hcqgx"]
@@ -17,10 +17,8 @@ script = ExtResource("4_acixg")
 save_name = "Test_1"
 save_id = "01"
 
-[sub_resource type="LabelSettings" id="LabelSettings_kucfd"]
-font = ExtResource("5_yfu5a")
-font_size = 25
-font_color = Color(0.956863, 0.952941, 0.933333, 1)
+[sub_resource type="LabelSettings" id="LabelSettings_hfq0u"]
+font_size = 33
 
 [node name="Mapper" type="Node"]
 script = ExtResource("1_k8wwf")
@@ -34,7 +32,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-color = Color(0.12549, 0.12549, 0.188235, 1)
+color = Color(0.901961, 0.901961, 0.901961, 1)
 
 [node name="MultiTool" type="Node" parent="."]
 script = ExtResource("1_lh1jr")
@@ -46,6 +44,8 @@ offset_left = 69.0
 offset_top = 47.0
 offset_right = 133.0
 offset_bottom = 78.0
+scale = Vector2(1, 1.01161)
+theme = ExtResource("5_htmnq")
 text = "Mode"
-label_settings = SubResource("LabelSettings_kucfd")
+label_settings = SubResource("LabelSettings_hfq0u")
 script = ExtResource("6_r6rvp")

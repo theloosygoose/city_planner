@@ -1,0 +1,18 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://bwlk027ro6wee"]
+
+[ext_resource type="FontFile" uid="uid://582y4yh616ti" path="res://assets/fonts/Octarine/Octarine-Bold.otf" id="1_m4q4w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e0p73"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.133333, 0.168627, 0.478431, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ycg27"]
+bg_color = Color(0.901961, 0.901961, 0.901961, 1)
+
+[resource]
+default_font = ExtResource("1_m4q4w")
+Label/styles/normal = SubResource("StyleBoxFlat_e0p73")
+Panel/styles/panel = SubResource("StyleBoxFlat_ycg27")

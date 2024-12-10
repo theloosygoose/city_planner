@@ -7,4 +7,3 @@ class_name res_SaveData
 
 var road_nodes: Array 
 
-

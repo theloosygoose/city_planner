@@ -45,6 +45,10 @@ window/size/viewport_height=540
 
 project/assembly_name="Static Typing Preset"
 
+[gui]
+
+theme/custom_font="res://assets/fonts/Octarine/Octarine-Bold.otf"
+
 [input]
 
 mouse_click={
