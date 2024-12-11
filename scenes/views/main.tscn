@@ -14,7 +14,7 @@ save_name = "test_0"
 save_id = "01"
 
 [sub_resource type="LabelSettings" id="LabelSettings_hfq0u"]
-font_size = 33
+font_size = 45
 
 [node name="Mapper" type="Node"]
 script = ExtResource("1_k8wwf")
