@@ -46,6 +46,7 @@ vertical_alignment = 1
 script = ExtResource("6_r6rvp")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(481, 271)
 position_smoothing_enabled = true
 position_smoothing_speed = 20.0
 script = ExtResource("5_0kbne")

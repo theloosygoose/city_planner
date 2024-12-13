@@ -14,6 +14,8 @@ func _init() -> void:
 func _mode_changed(mode: ModeSetting.MODES) -> void:
 	current_mode = mode
 
+
+#input handling
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.is_pressed():
 
@@ -24,6 +26,7 @@ func _input(event: InputEvent) -> void:
 				print("Mouse left pressed at: ", get_global_mouse_position())
 
 				draw_road(roadnode_scene, get_global_mouse_position())
+
 
 func _process(_delta: float) -> void:
 	pass
